@@ -17,7 +17,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import ContestCreationPage from './pages/ContestCreation/ContestCreationPage';
 import CONSTANTS from './constants';
 import browserHistory from './browserHistory';
-import ChatContainer from './components/Chat/ChatComponents/ChatContainer/ChatContainer';
+import ChatContainer from './components/Chat/ChatComponents/ChatContainer/ChatContainer'; 
 
 class App extends Component {
   render() {
