@@ -88,14 +88,16 @@ class Header extends React.Component {
           <div className={styles.loginSignnUpHeaders}>
             <div className={styles.numberContainer}>
               <img src={`${CONSTANTS.STATIC_IMAGES_PATH}phone.png`} alt="phone" />
-              <span>(877)&nbsp;355-3585</span>
+              <a href="tel:(877) 355-3585 ">(877)&nbsp;355-3585 </a>
             </div>
             <div className={styles.userButtonsContainer}>
               {this.renderLoginButtons()}
             </div>
           </div>
           <div className={styles.navContainer}>
+            <Link to= "/">
             <img src={`${CONSTANTS.STATIC_IMAGES_PATH}blue-logo.png`} className={styles.logo} alt="blue_logo" />
+            </Link>
             <div className={styles.leftNav}>
               <div className={styles.nav}>
                 <ul>
@@ -105,7 +107,7 @@ class Header extends React.Component {
                       src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`}
                       alt="menu"
                     />
-                    <ul>
+                    <ul className={styles.list}>
                       <li><a href="http://www.google.com">Beauty</a></li>
                       <li><a href="http://www.google.com">Consulting</a></li>
                       <li><a href="http://www.google.com">E-Commerce</a></li>
@@ -124,7 +126,7 @@ class Header extends React.Component {
                       src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`}
                       alt="menu"
                     />
-                    <ul>
+                    <ul className={styles.list}>
                       <li><a href="http://www.google.com">HOW IT WORKS</a></li>
                       <li><a href="http://www.google.com">PRICING</a></li>
                       <li><a href="http://www.google.com">AGENCY SERVICE</a></li>
@@ -145,7 +147,7 @@ class Header extends React.Component {
                       src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`}
                       alt="menu"
                     />
-                    <ul>
+                    <ul className={styles.list}>
                       <li><a href="http://www.google.com">NAMES</a></li>
                       <li><a href="http://www.google.com">TAGLINES</a></li>
                       <li><a href="http://www.google.com">LOGOS</a></li>
@@ -157,7 +159,7 @@ class Header extends React.Component {
                   <li>
                     <span>Names For Sale</span>
                     <img src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`} alt="menu" />
-                    <ul>
+                    <ul className={styles.list}>
                       <li><a href="http://www.google.com">POPULAR NAMES</a></li>
                       <li><a href="http://www.google.com">SHORT NAMES</a></li>
                       <li><a href="http://www.google.com">INTRIGUING NAMES</a></li>
@@ -177,7 +179,7 @@ class Header extends React.Component {
                       src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`}
                       alt="menu"
                     />
-                    <ul>
+                    <ul className={styles.list}>
                       <li><a href="http://www.google.com">ULTIMATE NAMING GUIDE</a></li>
                       <li><a href="http://www.google.com">POETIC DEVICES IN BUSINESS NAMING</a></li>
                       <li><a href="http://www.google.com">CROWDED BAR THEORY</a></li>
