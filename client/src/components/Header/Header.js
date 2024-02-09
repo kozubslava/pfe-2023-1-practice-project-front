@@ -128,7 +128,7 @@ class Header extends React.Component {
                     />
                     <ul className={styles.list}>
                       <li><a href="http://www.google.com">HOW IT WORKS</a></li>
-                      <li><a href="http://www.google.com">PRICING</a></li>
+                      <li><Link to ='/pricing'>PRICING</Link></li>
                       <li><a href="http://www.google.com">AGENCY SERVICE</a></li>
                       <li><a href="http://www.google.com">ACTIVE CONTESTS</a></li>
                       <li><a href="http://www.google.com">WINNERS</a></li>
