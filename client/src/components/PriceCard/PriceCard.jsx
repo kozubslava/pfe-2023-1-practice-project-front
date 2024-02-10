@@ -4,17 +4,19 @@ import PriceCardButton from '../PriceCardButton/PriceCardButton';
 import PriceCardContent from '../PriceCardContent/PriceCardContent';
 import styles from './PriceCard.module.sass'
 
-const PriceCard = ({name, description, price, content}) => {
-  return (<div className={styles.container}>
+const PriceCard = ({name, color, description, price, content}) => {
+  return (<div className={styles.container} >
+    
   <PriceCardHeader
     name={name}
     description={description}
     price={price}
+    color={color}
     
     />
     <PriceCardContent
     content={content}/>
-    {/* <PriceCardButton/> */}
+    <PriceCardButton color={color}>Start</PriceCardButton>
   </div>
     
     

@@ -18,11 +18,6 @@ function PriceCardContent ({content}) {
 
 return (<div className={styles.cardContent}> 
 {renderContent(content)}
-<ul>
-    <li className={styles.selectBox}>
-        <span>Start</span>
-    </li>
-</ul>
 </div>
 )
 
