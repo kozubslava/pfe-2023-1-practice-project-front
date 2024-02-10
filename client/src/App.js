@@ -18,7 +18,7 @@ import ContestCreationPage from './pages/ContestCreation/ContestCreationPage';
 import CONSTANTS from './constants';
 import browserHistory from './browserHistory';
 import ChatContainer from './components/Chat/ChatComponents/ChatContainer/ChatContainer';
-import PricingPage from './pages/PricingPage/pricingPage'; 
+import PricingPage from './pages/PricePage/pricePage'; 
 
 class App extends Component {
   render() {

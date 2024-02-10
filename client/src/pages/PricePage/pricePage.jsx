@@ -1,18 +1,20 @@
 
 import React, {useState} from "react";
 import jsonData from '../../api/priseContent.json'
-import PricingCard from "../../components/PricingCard/PricingCard";
+import PriceCard from "../../components/PriceCard/PriceCard";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+import styles from "./PricePage.module.sass"
 
 
-function PricingPage () {
+
+function PricePage () {
   const [data, setData] = useState(jsonData.packages);
 return (<div >
   <Header/>
-  <div>
+  <div className={styles.container}>
   {data.map((card, index) => (
-  <PricingCard key={index}
+  <PriceCard key={index}
                 name={card.name}
                 description={card.description}
                 price={card.price}
@@ -25,4 +27,4 @@ return (<div >
   <Footer/>
 </div>)
   }
-export default PricingPage
+export default PricePage
